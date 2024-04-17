@@ -1,0 +1,37 @@
+@mixin media-query($media-query) {
+  @if $media-query == screen-hd {
+    @media only screen and (max-width: $screen-hd) {
+      @content;
+    }
+  }
+
+  @if $media-query == screen-hd-ready {
+    @media only screen and (max-width: $screen-hd-ready) {
+      @content;
+    }
+  }
+
+  @if $media-query == desk-wide {
+    @media only screen and (max-width: $desk-wide-start) {
+      @content;
+    }
+  }
+
+  @if $media-query == desk {
+    @media only screen and (max-width: $desk-start) {
+      @content;
+    }
+  }
+
+  @if $media-query == tablet-port {
+    @media only screen and (max-width: $tablet-port-start) {
+      @content;
+    }
+  }
+
+  @if $media-query == mobile {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}

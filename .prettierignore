@@ -1,0 +1,7 @@
+# Ignore artifacts:
+dist
+.vscode
+src/js/vendor
+src/scss/vendor
+README.md
+gulpfile.js

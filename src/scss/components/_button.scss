@@ -1,0 +1,64 @@
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: 700;
+
+  &--solid {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: 1px solid var(--button-border);
+  }
+
+  &--outline {
+    background-color: var(--button-bg-outline);
+    color: var(--button-color-outline);
+    border: 1px solid var(--button-border);
+  }
+
+  &--black {
+    --button-bg: #000;
+    --button-bg-outline: transparet;
+    --button-color: #fff;
+    --button-color-outline: #000;
+    --button-border: #000;
+
+    &:hover {
+      --button-bg: #313131;
+      --button-color: #fff;
+      --button-bg-outline: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &--white {
+    --button-bg: #fff;
+    --button-bg-outline: transparet;
+    --button-color: #000;
+    --button-color-outline: #fff;
+    --button-border: #fff;
+
+    &:hover {
+      --button-bg: #d0d0d0;
+      --button-color: #000;
+      --button-bg-outline: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &--blue {
+    --button-bg: #005aa9;
+    --button-bg-outline: #fff;
+    --button-color: #fff;
+    --button-color-outline: #005aa9;
+    --button-border: #005aa9;
+
+    &:hover {
+      --button-bg: #d0d0d0;
+      --button-color: #000;
+      --button-bg-outline: #eff8ff;
+    }
+  }
+}

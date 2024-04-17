@@ -1,0 +1,40 @@
+/* ========================================================== */
+/* 			            01. Variables                          */
+/* ========================================================== */
+$font-size-root: 16px !default;
+$grid-gutter: 15px !default;
+$grid-max-innerwidth: 1300px !default;
+$grid-max-width: $grid-max-innerwidth + ($grid-gutter * 2) !default;
+$grid-columns: 12 !default;
+
+/* ========================================================== */
+/* 			            02. Colors                          */
+/* ========================================================== */
+$main-font-color: #000000 !default;
+$primary-color: #005aa9 !default;
+$dark-blue: #002d54 !default;
+$blue: #528fc5 !default;
+$light-blue: #c7e9fd !default;
+$tirquoise: #88d3da !default;
+$orange: #ea5a0b !default;
+
+/* ========================================================== */
+/* 			         03. Breakpoints                          */
+/* ========================================================== */
+$breakpoint-sm: 767px !default;
+$breakpoint-md: $grid-max-width !default;
+
+$mobile: 680px !default; // @include media-query(mobile){}
+$tablet-port-start: 960px !default; // @include media-query(tablet-port){}
+$desk-start: 1200px !default; // @include media-query(desk){}
+$desk-wide-start: 1320px !default; // @include media-query(desk-wide){}
+$screen-hd-ready: 1400px !default; // @include media-query(screen-hd-ready){}
+$screen-hd: 1600px !default; // @include media-query(screen-hd){}
+
+$breakpoints: (
+  '': false,
+  'xl': $desk-wide-start,
+  'md': $desk-start,
+  'sm': $tablet-port-start,
+  'xs': $mobile
+);
